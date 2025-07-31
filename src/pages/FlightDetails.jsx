@@ -5,6 +5,7 @@ import { MdOutlineDateRange } from 'react-icons/md';
 import { RiPriceTag3Line } from 'react-icons/ri';
 import { NavLink, useLoaderData } from 'react-router';
 import imgflight from '../assets/flight.jpg'
+import Features from '../components/Features';
 
 
 const FlightDetails = () => {
@@ -75,6 +76,8 @@ const FlightDetails = () => {
             <div className='mt-10'>
                 <NavLink className='btn btn-primary' to={`/booking/${flightId}`} state={{ flightId, allSeats }}>Book Flight</NavLink>
             </div>
+
+            <Features></Features>
         </div>
     );
 };

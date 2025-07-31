@@ -9,7 +9,7 @@ import Loading from '../components/Loading';
 const MyBookings = () => {
 
     const { user } = useAuth();
-    console.log('Logged in user ID:', user?.id);
+   // console.log('Logged in user ID:', user?.id);
 
     const { data: bookings = [], isLoading } = useQuery({
         queryKey: ['bookings'],
@@ -21,7 +21,7 @@ const MyBookings = () => {
     });
 
     const mybookings = bookings.filter((booking) => booking.userId === user?.id);
-    console.log('Filtered bookings:', mybookings);
+   // console.log('Filtered bookings:', mybookings);
     //688a0172ae673e7e2f92349d
 
 

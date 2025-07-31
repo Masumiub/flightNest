@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="mx-auto px-4 mb-20">
       {/* Header */}
-      <h1 className="text-5xl font-bold text-center mb-6 mt-20">About US</h1>
+      <h1 className="text-5xl font-bold text-center mb-6 mt-20">About flightNest</h1>
 
       {/* Description */}
       <p className=" text-center max-w-3xl mx-auto mb-12 ">
