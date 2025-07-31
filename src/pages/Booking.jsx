@@ -91,10 +91,10 @@ const Booking = () => {
 
 
     return (
-        <div className="p-4">
-            <h2 className="text-2xl font-semibold mb-4">Select Your Seats</h2>
+        <div className="p-4 h-screen">
+            <h2 className="text-4xl font-semibold mb-4 text-center my-20">Select Your Seats</h2>
 
-            <div className="grid grid-cols-4 gap-3 mb-6">
+            <div className="grid grid-cols-4 gap-3 mb-6 mt-10">
                 {allSeats?.map((seat) => (
                     <button
                         key={seat._id}
@@ -111,7 +111,8 @@ const Booking = () => {
                     </button>
                 ))}
             </div>
-
+            
+            <div className='text-center mt-10'>
             <button
                 onClick={handleBooking}
                 className="btn btn-primary"
@@ -120,8 +121,10 @@ const Booking = () => {
             </button>
 
             <button onClick={handleConfirmBooking} className="btn btn-success ml-4">
-                Confirm Booking
+                Pay & Confirm Booking
             </button>
+            </div>
+
         </div>
     )
 }

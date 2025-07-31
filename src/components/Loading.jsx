@@ -1,5 +1,4 @@
 import React from 'react';
-import React from 'react';
 import { NavLink } from 'react-router';
 import Lottie from "lottie-react";
 import ErrorImg from '../assets/loading.json'

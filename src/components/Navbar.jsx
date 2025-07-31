@@ -2,6 +2,8 @@ import React from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { NavLink, useNavigate } from 'react-router';
 import logo from '../assets/logo.png';
+import './Navbar.css'
+
 
 const Navbar = () => {
 

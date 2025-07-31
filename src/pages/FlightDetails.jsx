@@ -19,7 +19,7 @@ const FlightDetails = () => {
     //console.log(allSeats)
 
     return (
-        <div className='mb-20'>
+        <div className='mb-20 h-[70vh]'>
 
             <div className='my-20'>
                 <h1 className='text-5xl font-bold text-center'>Flight Details</h1>
@@ -73,7 +73,7 @@ const FlightDetails = () => {
             </div>
 
             <div className='mt-10'>
-                <NavLink className='btn btn-primary' to={`/booking/${flightId}`} state={{ flightId, allSeats }}>Booking</NavLink>
+                <NavLink className='btn btn-primary' to={`/booking/${flightId}`} state={{ flightId, allSeats }}>Book Flight</NavLink>
             </div>
         </div>
     );

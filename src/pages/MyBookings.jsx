@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 import axiosSecureBooking from '../hooks/useAxiosBooking';
 import { useQuery } from '@tanstack/react-query';
 import axiosSecure from '../hooks/useAxiosSecure';
+import Loading from '../components/Loading';
 
 const MyBookings = () => {
 
@@ -24,10 +25,10 @@ const MyBookings = () => {
     //688a0172ae673e7e2f92349d
 
 
-    if (isLoading) return <p>Loading bookings...</p>;
+    if (isLoading) return <Loading></Loading>;
 
     if (!bookings.length) {
-        return <p>You have no bookings yet.</p>;
+        return <p className='my-40 text-center text-2xl'>You have no bookings yet.</p>;
     }
 
     return (
@@ -49,7 +50,8 @@ const MyBookings = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {mybookings.map(booking => (
+                    {
+                    mybookings.map(booking => (
                         <tr key={booking._id} className="text-center">
                             <td className=" px-4 py-2">{booking.flightId?.airline || 'N/A'}</td>
                             <td className=" px-4 py-2">{booking.flightId?.flight_number || 'N/A'}</td>
@@ -67,7 +69,8 @@ const MyBookings = () => {
                             <td className=" px-4 py-2">{booking.bookingStatus || 'N/A'}</td>
                             <td className=" px-4 py-2">{booking.paymentStatus || 'N/A'}</td>
                         </tr>
-                    ))}
+                    ))
+                    }
                 </tbody>
             </table>
         </div>
