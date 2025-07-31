@@ -6,14 +6,13 @@ A responsive and modern flight booking platform where users can browse, book, an
 
 ## 🔍 Description
 
-The **Flight Booking Web App** is designed to simplify the travel booking experience. Users can register, log in, and book flights based on availability. Admins can manage flights and bookings, while the system ensures secure access control through private and admin routes.
+The **flightNest** is designed to simplify the travel booking experience. Users can register, log in, and book flights based on availability. Admins can manage flights and bookings, while the system ensures secure access control through private and admin routes.
 
 ---
 
 ## 🚀 Top 5 Features
 
 1. **User Authentication & Authorization**
-   - Firebase Auth for sign-up/login
    - Private routes for authenticated access
    - Role-based access (admin/user)
 
@@ -38,12 +37,11 @@ The **Flight Booking Web App** is designed to simplify the travel booking experi
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js, React Router v6
-- **Authentication**: Firebase Authentication
 - **Backend**: Node.js + Express.js (hosted)
 - **Database**: MongoDB Atlas
 - **State Management**: React Context API
 - **Data Fetching**: TanStack Query (React Query)
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS, Daisy UI
 
 ---
 
@@ -51,8 +49,8 @@ The **Flight Booking Web App** is designed to simplify the travel booking experi
 
 1. **Clone the repository**
    
-   git clone https://github.com/Masumiub/flightNest.git
-   cd flightNest-app
+   - git clone https://github.com/Masumiub/flightNest.git
+   - cd flightNest-app
 
 
 2. **Install dependencies**
@@ -60,10 +58,10 @@ The **Flight Booking Web App** is designed to simplify the travel booking experi
     npm install
 
 3. **Run the app**
-    npm run dev
+    - npm run dev
 
 
 ## 🧑‍💻 Author
 Masum Musfique
-Frontend Developer | React | Firebase | MongoDB
+- Frontend Developer | React | Firebase | MongoDB
 
