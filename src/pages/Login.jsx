@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import { NavLink, useNavigate } from 'react-router'
+import { NavLink, useLocation, useNavigate } from 'react-router'
 import toast from 'react-hot-toast'
 import { useAuth } from '../hooks/useAuth';
 
@@ -7,14 +7,17 @@ const Login = () => {
   const { register, handleSubmit } = useForm()
   const { login } = useAuth()
   const navigate = useNavigate()
+    const location = useLocation()
+
+      const from = location.state?.from?.pathname || '/'
 
   const onSubmit = async (data) => {
-    console.log('Submitting login form:', data)
+    //console.log('Submitting login form:', data)
     try {
       await login(data.email, data.password)
-      console.log('Login success')
+      //console.log('Login success')
       toast.success('Login successful!')
-      navigate('/')
+      navigate(from, { replace: true })
     } catch (err) {
       console.error('Login error:', err)
       toast.error('Login failed. Check credentials.')

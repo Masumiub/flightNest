@@ -25,10 +25,10 @@ const ManageFlights = () => {
         if (!confirmDelete) return;
 
         try {
-            console.log('Deleting flight:', id);
+           // console.log('Deleting flight:', id);
 
             const res = await axiosSecure.delete(`/flights/${id}`);
-            console.log('Deleted:', res.data);
+            //console.log('Deleted:', res.data);
 
             if (res.status === 200 || res.status === 204) {
                 queryClient.invalidateQueries(['flights']);
