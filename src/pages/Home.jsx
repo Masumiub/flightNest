@@ -1,13 +1,18 @@
 import React from 'react';
 import Header from '../components/Header';
-import Flights from './Flights';
+import LatestFlights from '../components/LatestFlights';
+import FAQs from '../components/FAQs';
+import Testimonials from '../components/Testimonials';
+
 
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            <Flights></Flights>
+            <LatestFlights></LatestFlights>
+            <Testimonials></Testimonials>
+            <FAQs></FAQs>
             
         </div>
     );
