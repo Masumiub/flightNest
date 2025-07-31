@@ -31,9 +31,9 @@ const Login = () => {
         <input type="password" placeholder="Password" {...register('password')} className="input mb-2 w-full" />
         <button type="submit" className="btn w-full bg-blue-600 text-white mt-5">Login</button>
 
-        
-          <p className='text-center mt-5'>Don't have an Account? <span className='text-blue-500'><NavLink to='/register'>Register</NavLink></span></p>
-      
+
+        <p className='text-center mt-5'>Don't have an Account? <span className='text-blue-500'><NavLink to='/register'>Register</NavLink></span></p>
+
       </form>
 
 

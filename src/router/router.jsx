@@ -16,13 +16,15 @@ import ManageBookings from "../pages/ManageBookings";
 import Booking from "../pages/Booking";
 import MyBookings from "../pages/MyBookings";
 import PrivateRoute from "../routes/PrivateRoute";
+import Loading from "../components/Loading";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         Component: RootLayout,
-        hydrateFallbackElement: <p className="text-center">Loading....</p>,
-        errorElement: <p>404! Page not found</p>,
+        hydrateFallbackElement: <Loading></Loading>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,

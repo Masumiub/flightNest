@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import Lottie from "lottie-react";
-import ErrorImg from '../../assets/Website maintenance, website problems, 404.json'
+import ErrorImg from '../assets/Website maintenance, website problems, 404.json'
 
 
 const ErrorPage = () => {
