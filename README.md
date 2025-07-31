@@ -50,7 +50,7 @@ The **flightNest** is designed to simplify the travel booking experience. Users 
 1. **Clone the repository**
    
    - git clone https://github.com/Masumiub/flightNest.git
-   - cd flightNest-app
+   - cd flightNest-main
 
 
 2. **Install dependencies**

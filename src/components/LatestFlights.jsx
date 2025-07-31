@@ -7,6 +7,7 @@ import { IoMdTime } from "react-icons/io";
 import { RiPriceTag3Line } from "react-icons/ri";
 import imgflight from '../assets/flight.jpg'
 import { NavLink } from 'react-router';
+import Loading from './Loading';
 
 
 const fetchFlights = async (filters) => {
@@ -46,13 +47,13 @@ const LatestFlights = () => {
         refetch()
     }
 
-    if (isLoading) return <p className="text-center mt-10 text-lg">Loading flights...</p>
+    if (isLoading) return <Loading></Loading>
     if (isError) return <p className="text-center mt-10 text-red-500">Failed to load flights!</p>
 
     return (
         <div className='mb-20'>
             <div className='my-20'>
-                <h1 className='text-5xl font-bold text-center'>All Flights</h1>
+                <h1 className='text-5xl font-bold text-center'>Latest Flights</h1>
             </div>
 
             <div className='my-10 bg-base-200 shadow-2xl  mx-auto rounded-2xl'>
